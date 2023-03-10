@@ -32,7 +32,8 @@ function leapYear(year: number): boolean {
 console.log(`// 2. Weather Leap Year Function: \n`, leapYear(2000));
 
 // 3. This RNATranscription function
-function rnaTranscription(dna: string): string {
+type Nucleotide = 'A' | 'C' | 'G' | 'T'
+function rnaTranscription(dna: string[] | string): string {
     let rna: string = "";
     for (let nucleotide of dna) {
         switch (nucleotide) {
@@ -56,7 +57,7 @@ function rnaTranscription(dna: string): string {
 }
 
 console.log(`// 3. RNA Transcription Function: \n`, rnaTranscription("GCTA"))
-
+ 
 // 4. The factorial recursive function.
 function factorial(number: number): number {
     if (number === 0 || number === 1) {
@@ -83,13 +84,31 @@ setTimeout(timeoutHandler, timeout);
 // 6. The type of the variable of someValue
 const someValue: number | null = Math.random() > 0.5 ? 12 : null;
 
+const nextValue = someValue == null ? null : someValue + 1;
 
 console.log(`// 6. The type of the variable of someValue: \n`, someValue);
+console.log(someValue, nextValue);
 
 
 // 7. The type of the following object
+type Teacher = {
+    name: string,
+    age: number,
+    students: Student[],
+}
 
-const peter = {
+type Student = {
+    name: string,
+    age: number,
+    exercises?: Exercises[],
+}
+
+type Exercises = {
+    score: number,
+    date: Date
+}
+
+const peter: Teacher = {
     name: "Peter",
     age: 50,
     students: [
@@ -103,9 +122,9 @@ const peter = {
     ],
 };
 
-type peter = {
-    name: string,
-    age: number,
-    student: Object[]
+
+function report(student: Student) {
+    
 }
+
 console.log(peter);

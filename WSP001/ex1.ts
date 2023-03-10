@@ -10,7 +10,7 @@ console.log(lib.someObject); /* should print "Hello World"*/
 console.log(lib.someFunction()); /* should print "Foobar"*/
 
 /* Cls is a function which is exported as the default export of the module Cls*/
-console.log(Cls());
+console.log(Cls(7,7));
 
 /* func is a function which is exported as the named export of the module func */
-console.log(func());
+console.log(func(7,7));

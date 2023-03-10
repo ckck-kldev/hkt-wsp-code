@@ -1,4 +1,7 @@
 import * as express from 'express'
-import * as fs from 'fs'
+import fs from 'fs'
 
-fs.
+
+let test = fs.readFileSync('package.json')
+
+console.log(test);
