@@ -21,7 +21,7 @@ export default class Player {
 
 
       // report being attack
-      console.log(`Player ${player} attacks a monster (HP: ${monster.hp})`, ``);
+      // console.log(`Player ${player} attacks a monster (HP: ${monster.hp})`, ``);
     }
   
     gainExperience(exp: number) {
