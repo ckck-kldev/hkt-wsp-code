@@ -41,7 +41,7 @@ class Player {
   }
 }
 
-class Monster {
+export default class Monster {
   private hp: number;
   private level: number;
   private gotExped: boolean;
