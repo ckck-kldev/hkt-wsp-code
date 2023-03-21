@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memo Wall</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/css.css" />
+  </head>
+  <body>
+    <!--main-->
+    <div class="main-section">
+      <!--control-->
+      <div class="control-board container">
+        <!--memo box start-->
+        <div class="row">
+          <div class="col">
+            <div class="memo-box">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Write Memo"
+              ></textarea>
+
+              <button class="btn btn-light delete-button">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <button class="btn btn-light edit-button">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--memo box end-->
+
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+              <input type="file" class="form-control" id="inputGroupFile01" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-light">Submit</button>
+            </div>
+          </div>
+          <div class="row"><p class="col">Admin Use</p></div>
+          <div class="row">
+            <form>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Remember Me</label
+                >
+              </div>
+              <button type="submit" class="btn btn-light">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="display-board container-fluid">
+        <div class="memo-box">
+          <p class="fw-lighter">Memo msg 1</p>
+          <button class="btn btn-light delete-button">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+          <button class="btn btn-light edit-button">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+        </div>
+        <div class="memo-box">
+          BOX
+          <button class="btn btn-light delete-button">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+          <button class="btn btn-light edit-button">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+        </div>
+        <div class="memo-box">
+          BOX
+          <button class="btn btn-light delete-button">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+          <button class="btn btn-light edit-button">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+        </div>
+      </div> -->
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
