@@ -26,79 +26,81 @@
     <link rel="stylesheet" href="css/css.css" />
   </head>
   <body>
-    <!--main-->
-    <div class="main-section">
-      <!--control-->
-      <div class="control-board container">
-        <!--memo box start-->
-        <div class="row">
-          <div class="col">
-            <div class="memo-box">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Write Memo"
-              ></textarea>
-
-              <button class="btn btn-light delete-button">
-                <i class="fa-solid fa-trash"></i>
-              </button>
-              <button class="btn btn-light edit-button">
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!--memo box end-->
-
-        <div class="row">
-          <div class="col">
-            <div class="input-group mb-3">
-              <input type="file" class="form-control" id="inputGroupFile01" />
-            </div>
-          </div>
+    <div class="background">
+      <!--main-->
+      <div class="main-section">
+        <!--control-->
+        <div class="control-board container">
+          <!--memo box start-->
+          <h1>Online Memo Wall <sub><span class="counter"></span></h1></sub>
           <div class="row">
             <div class="col">
-              <button class="btn btn-light">Submit</button>
+              <div class="memo-box">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Write Memo"
+                ></textarea>
+
+                <button class="btn btn-light delete-button">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+                <button class="btn btn-light edit-button">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="row"><p class="col">Admin Use</p></div>
+          <!--memo box end-->
+
           <div class="row">
-            <form>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
+            <div class="col">
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile01" />
               </div>
-              <div class="form-group">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                />
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-light">Submit</button>
               </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Remember Me</label
-                >
-              </div>
-              <button type="submit" class="btn btn-light">Submit</button>
-            </form>
+            </div>
+            <div class="row"><p class="col">Admin Use</p></div>
+            <div class="row">
+              <form>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Remember Me</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-light">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- <div class="display-board container-fluid">
+        <!-- <div class="display-board container-fluid">
         <div class="memo-box">
           <p class="fw-lighter">Memo msg 1</p>
           <button class="btn btn-light delete-button">
@@ -127,7 +129,13 @@
           </button>
         </div>
       </div> -->
+      </div>
     </div>
     <script src="js/index.js"></script>
+    <script src="counter.js"></script>
+    <script>
+      console.log(counter);
+      document.querySelector(".counter").textContent = `(${counter})`;
+    </script>
   </body>
 </html>

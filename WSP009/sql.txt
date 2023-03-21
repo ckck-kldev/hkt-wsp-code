@@ -1,0 +1,23 @@
+CREATE TABLE memos (
+    id SERIAL primary key,
+    content TEXT null,
+    image VARCHAR(255) null,
+    created_at TIMESTAMP default current_timestamp,
+    updated_at TIMESTAMP
+);
+
+CREATE TABLE users (
+    id SERIAL primary key,
+    username VARCHAR(255) null,
+    password VARCHAR(255) null,
+    created_at TIMESTAMP default current_timestamp,
+    updated_at TIMESTAMP
+);
+
+
+INSERT INTO memos (content) VALUES 
+("test memo1"),
+("test memo2"),
+("test memo3");
+
+INSERT INTO memos (content) VALUES ('test memo1'),('test memo2'),('test memo3');
